@@ -9,7 +9,7 @@ Meant to be as simple as possible.
 import requests
 
 __author__ = 'aldur'
-__version__ = '0.0.2'
+__version__ = '0.0.3'
 
 API_CURRENCIES = "https://www.cryptonator.com/api/currencies"
 API_SIMPLE_TICKER = "https://api.cryptonator.com/api/ticker/{}-{}"
