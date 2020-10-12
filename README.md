@@ -4,7 +4,8 @@ A simple wrapper for the [Cryptonator](https://www.cryptonator.com/api/) exchang
 
 ## Install
 
-You can either install Cryptonator by using `pip`, or simply copy the `cryptonator.py` file in you project root directory.
+You can either install Cryptonator by using `pip`, or simply copy the
+`cryptonator.py` file in you project root directory.
 
 ```bash
 $ pip install cryptonator  # add --user if you want
@@ -16,7 +17,7 @@ $ pip install cryptonator  # add --user if you want
 import cryptonator
 
 """Get an exchange rate between two currencies."""
-cryptonator.get_exchange_rate('usd', 'eur')  
+cryptonator.get_exchange_rate('usd', 'eur')
 # 0.95147479
 
 """A Cryptonator API object can speed-up things if you need multiple calls."""
@@ -35,4 +36,3 @@ You can launch them with:
 ```bash
 $ python test_cryptonator.py
 ```
-
