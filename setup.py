@@ -4,6 +4,7 @@
 """Setuptools configuration file."""
 
 import setuptools
+from cryptonator import __version__, __name__
 
 __author__ = 'aldur'
 
@@ -23,8 +24,8 @@ def readme():
 
 
 setuptools.setup(
-    name='cryptonator',
-    version='0.0.1',
+    name=__name__,
+    version=__version__,
     description='A simple wrapper for the cryptonator exchange rate API.',
     long_description=readme(),
     url='https://github.com/aldur/cryptonator',
