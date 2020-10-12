@@ -1,1 +1,1 @@
-include README.rst LICENSE test_cryptonator.py requirements.txt 
+include README.md LICENSE test_cryptonator.py requirements.txt
