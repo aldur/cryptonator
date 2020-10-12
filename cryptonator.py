@@ -40,6 +40,7 @@ class Cryptonator(object):
 
     def __init__(self):
         self.session = requests.Session()  # Use connection pooling for multiple requests.
+        self.session.headers.update({'User-Agent': 'CryptonatorApi/{}'.format(__version__)})
 
     def get_exchange_rate(self, base, target, raise_errors=True):
         """Return the ::base:: to ::target:: exchange rate."""
