@@ -66,12 +66,12 @@ class Cryptonator(object):
 
         return float(j['ticker']['price'])
 
-    def get_exchange_rates(self, base, targets=None):
+    def get_exchange_rates(self, base, targets=None, raise_errors=False):
         """Return the ::base:: to ::targets:: exchange rate (as a dictionary)."""
         if targets is None:
             targets = get_available_currencies()
 
-        return {t: self.get_exchange_rate(base, t, raise_errors=False) for t in targets}
+        return {t: self.get_exchange_rate(base, t, raise_errors=raise_errors) for t in targets}
 
 
 def get_exchange_rate(base, target, *args, **kwargs):
