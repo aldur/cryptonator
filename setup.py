@@ -26,6 +26,7 @@ def readme():
 setuptools.setup(
     name=__name__,
     version=__version__,
+    py_modules=['cryptonator'],
     description='A simple wrapper for the cryptonator exchange rate API.',
     long_description=readme(),
     url='https://github.com/aldur/cryptonator',
