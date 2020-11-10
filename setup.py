@@ -12,15 +12,9 @@ __author__ = 'aldur'
 def readme():
     """Try converting the README to an RST document. Return it as is on failure."""
     try:
-        import pypandoc
-        readme_content = pypandoc.convert('README.md', 'rst')
-    except(IOError, ImportError):
-        print("Warning: no pypandoc module found.")
-        try:
-            readme_content = open('README.md').read()
-        except IOError:
-            readme_content = ''
-    return readme_content
+        return open('README.md').read()
+    except IOError:
+        return ''
 
 
 setuptools.setup(
@@ -29,6 +23,7 @@ setuptools.setup(
     py_modules=['cryptonator'],
     description='A simple wrapper for the cryptonator exchange rate API.',
     long_description=readme(),
+    long_description_content_type='text/markdown',
     url='https://github.com/aldur/cryptonator',
 
     author='Adriano Di Luzio',
