@@ -36,3 +36,9 @@ You can launch them with:
 ```bash
 $ python test_cryptonator.py
 ```
+
+## Preparing for a new release
+
+Bump the `__version__` within the `cryptonator.py` file, tag and push to
+`master` and then prepare a new release. A Github Action will take care of
+pushing the code to PyPi.
